@@ -79,9 +79,8 @@
 
 #### **隐藏层数**
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/8.jpg)
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/11.jpg)
 
 #### **网络形状**
 
-
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/11.jpg)
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/12.jpg)
