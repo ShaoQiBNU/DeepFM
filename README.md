@@ -29,11 +29,13 @@
 
 ![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/2.jpg)
 
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/3.jpg)
+
 ### Deep部分
 
 > Deep部分是一个前向的DNN，用于学习更高阶的交叉特征，原始的高维稀疏特征向量被Embedding层压缩成低维稠密特征向量，然后再送入hidden layer。
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/3.jpg)
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/4.jpg)
 
 **论文直接将FM和DNN进行整体联合训练，从而实现了一个端到端的模型**
 
@@ -41,11 +43,11 @@
 
 > 文中通过在Criteo数据集和Company数据集进行大量实验，对比了LR、FM、FNN、IPNN、OPNN、PNN\*，LR&DNN、FM&DNN和DeepFM的效果，证明DeepFM在效果上超越了目前最优的模型，效率上的与当前最优模型相当。实验评价指标采用AUC和Logloss两个离线指标。
 
-
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/5.jpg)
 
 ### 效率实验
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/3.jpg)
+
 
 > 实验分别比较了各个模型在CPU和GPU上的运行效率，DeepFM都取得了和最优效率相当的结果。（从图中看OPNN的执行效率也很高，但是OPNN结果效果波动性大，不稳定）
 
