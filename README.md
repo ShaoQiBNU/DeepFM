@@ -14,7 +14,7 @@
 
 > DeepFM模型结构设计如下：
 
-Img1
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/1.jpg)
 
 > DeepFM模型包含FM和DNN两部分，FM算法负责对一阶特征以及二阶特征（由一阶特征交叉组合得到的）进行特征的提取；DNN算法负责对高阶特征进行特征的提取，与Wide & Deep不同的地方主要有以下两点：
 >
@@ -27,31 +27,31 @@ Img1
 
 > FM部分主要是对一维特征与二维交叉特征进行建模。对于一维部分进行了Addition运算，对于二维交叉特征主要通过隐向量点积的方法高效的获得2阶特征表示，即使交叉特征在数据集中非常稀疏甚至是从来没出现过，这也是FM的优势所在。
 
-Img2
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/2.jpg)
 
 ### Deep部分
 
 > Deep部分是一个前向的DNN，用于学习更高阶的交叉特征，原始的高维稀疏特征向量被Embedding层压缩成低维稠密特征向量，然后再送入hidden layer。
 
-Img2
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/3.jpg)
 
 **论文直接将FM和DNN进行整体联合训练，从而实现了一个端到端的模型**
 
 ## 实验
 
-> 文中通过在Criteo数据集和Company数据集进行大量实验，对比了LR、FM、FNN、IPNN、OPNN、PNN*，LR&DNN、FM&DNN和DeepFM的效果，证明DeepFM在效果上超越了目前最优的模型，效率上的与当前最优模型相当。实验评价指标采用AUC和Logloss两个离线指标。
+> 文中通过在Criteo数据集和Company数据集进行大量实验，对比了LR、FM、FNN、IPNN、OPNN、PNN\*，LR&DNN、FM&DNN和DeepFM的效果，证明DeepFM在效果上超越了目前最优的模型，效率上的与当前最优模型相当。实验评价指标采用AUC和Logloss两个离线指标。
 
 
 
 ### 效率实验
 
-img
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/3.jpg)
 
 > 实验分别比较了各个模型在CPU和GPU上的运行效率，DeepFM都取得了和最优效率相当的结果。（从图中看OPNN的执行效率也很高，但是OPNN结果效果波动性大，不稳定）
 
 ### 效果实验
 
-img
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/4.jpg)
 
 > 实验结果可以看出，DeepFM模型比其他对比模型AUC提升至少0.37%，logloss减少至少0.42%。同时可以得到以下结论：
 >
@@ -65,33 +65,24 @@ img
 
 #### **激活函数**
 
-img
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/5.jpg)
 
 #### **Dropout**
 
-img
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/6.jpg)
 
 #### **每层节点数**
 
-Img
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/7.jpg)
 
 #### **隐藏层数**
 
-Img
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/8.jpg)
 
 #### **网络形状**
 
-Img
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/9.jpg)
 
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/10.jpg)
 
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/11.jpg)
