@@ -47,13 +47,13 @@
 
 ### 效率实验
 
-
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/6.jpg)
 
 > 实验分别比较了各个模型在CPU和GPU上的运行效率，DeepFM都取得了和最优效率相当的结果。（从图中看OPNN的执行效率也很高，但是OPNN结果效果波动性大，不稳定）
 
 ### 效果实验
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/4.jpg)
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/7.jpg)
 
 > 实验结果可以看出，DeepFM模型比其他对比模型AUC提升至少0.37%，logloss减少至少0.42%。同时可以得到以下结论：
 >
@@ -67,15 +67,15 @@
 
 #### **激活函数**
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/5.jpg)
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/8.jpg)
 
 #### **Dropout**
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/6.jpg)
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/9.jpg)
 
 #### **每层节点数**
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/7.jpg)
+![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/10.jpg)
 
 #### **隐藏层数**
 
@@ -83,8 +83,5 @@
 
 #### **网络形状**
 
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/9.jpg)
-
-![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/10.jpg)
 
 ![image](https://github.com/ShaoQiBNU/DeepFM/blob/master/img/11.jpg)
